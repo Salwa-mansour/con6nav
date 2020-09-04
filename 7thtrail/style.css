@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background: rgb(27, 192, 184);
+    color: rgb(232, 251, 252);
+    text-transform: capitalize;
+}
+
+.nav > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 10px;
+   
+}
+
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.nav > .nav-links > a:hover {
+    background: rgb(9, 59, 57);
+}
+
+.nav > .nav-btn ,
+.nav > #nav-check {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .nav > .nav-btn {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: inline;
+        
+    }
+
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        padding: 8px;
+      
+    }
+
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid  rgb(232, 251, 252);
+    }
+
+    .nav > .nav-btn:hover ,
+    .nav > #nav-check:checked ~ .nav-btn  {
+        background: rgb(24, 172, 164);
+    }
+
+    .nav > .nav-links {
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        display: block;
+        width: 100%;
+        background: rgb(19, 112, 109);
+        height: 0px;
+        overflow-y: hidden;
+    }
+
+    .nav > .nav-links > a {
+        display: block;
+        width: inherit;
+    }
+
+    .nav > #nav-check:checked ~ .nav-links {
+        height: 50vw;
+        overflow-x: hidden;
+    }
+}

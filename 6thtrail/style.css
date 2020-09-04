@@ -47,7 +47,7 @@
     display: none;
 }
 
-@media {
+@media (max-width:600px) {
     .nav > .nav-btn {
         position: absolute;
         display: inline-block;
