@@ -1,0 +1,87 @@
+/* Trining to strart mobile this time */
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+.nav{
+    position: relative;
+    width: 100%;
+    background-color: aquamarine;
+    height: 50px;
+    min-width: 200px;
+}
+.nav-header{
+ padding: 10px;
+ display: inline-block;
+ color:#eee;
+ text-shadow:1px 1px 2px black;
+}
+#nav-check{
+    display: none;
+}
+.nav-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    outline: 1px rebeccapurple;
+    background-color: rgb(105, 216, 179) ;
+}
+.nav-btn label{
+    display: block;
+    height: 30px;
+    width: 30px;
+    padding: 9px;
+}
+.nav-btn label span{
+    display: block;
+    height: 10px;
+    width: 25px;
+    border-top: 3px solid rgb(9, 82, 82);
+}
+.nav-links{
+    background-color: rgb(71, 170, 137) ;
+    /* line-height: 3; */
+    height: 0;
+    overflow-y: hidden;
+    transition: all .3s ease-in;
+}
+.nav-links a{
+
+    padding: 13px 10px;
+    display: block;
+    /* color: #eee; */
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom:1px solid rgba(255, 255, 255, 0.178);
+
+}
+.nav #nav-check:checked ~ .nav-links{
+    height: 50vh;
+}
+/* lets make larger screen virgen */
+@media (min-width:600px){
+    .nav-btn{
+        display: none;
+    }
+    .nav-links{
+        position: absolute;
+        top: 0;
+        right: 0;
+       line-height: 1;
+        float: right;
+       
+       height: 50px;
+       background-color: transparent;
+    }
+
+    .nav-links a{
+          display: inline-block;
+        
+    }
+    .nav-links a:hover{
+        background-color: rgba(0, 0, 0, 0.342);
+         text-align: center;
+    }
+}

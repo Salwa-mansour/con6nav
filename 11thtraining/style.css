@@ -74,3 +74,19 @@ a:hover{
         /* overflow: hidden; */
     }
 }
+/* /////////////////////// */
+ul{
+   list-style: none; 
+}
+ul li{
+    display: inline;
+}
+.ul-1{
+    position: absolute;
+ 
+}
+.ul-1 li{
+    display: block;
+    width: 4rem;
+    background-color: palegoldenrod;
+}
